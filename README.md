@@ -48,81 +48,49 @@ src/
 └─ test/
 └─ java/com/rental/vehicle_rental_system/
 
-yaml
-Copy code
-
 ---
 
 ## Setup Instructions
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/saipraveennaidu/vehicle-rental-system.git
-cd vehicle-rental-system
+  git clone https://github.com/saipraveennaidu/vehicle-rental-system.git
+  cd vehicle-rental-system
+
 Configure MySQL
-
-Create a database named vehicle_rental_db.
-
-Update src/main/resources/application.properties with your MySQL username and password.
+  Create a database named vehicle_rental_db.
+  Update src/main/resources/application.properties with your MySQL username and password.
 
 Build & Run
+  mvn clean install
+  mvn spring-boot:run
 
-bash
-Copy code
-mvn clean install
-mvn spring-boot:run
 Access API
-
-Base URL: http://localhost:8080/api/
-
+  Base URL: http://localhost:8080/api/
 Use tools like Postman to test endpoints.
 
 API Endpoints
 Auth
-
-POST /api/auth/register – Register a new user
-
-POST /api/auth/login – Authenticate user
-
+  POST /api/auth/register – Register a new user
+  POST /api/auth/login – Authenticate user
 Vehicle
-
-GET /api/vehicles – List all vehicles
-
-POST /api/vehicles – Add a vehicle (Admin)
-
-GET /api/vehicles/{id} – Get vehicle details
-
-PUT /api/vehicles/{id} – Update vehicle (Admin)
-
-DELETE /api/vehicles/{id} – Delete vehicle (Admin)
-
+  GET /api/vehicles – List all vehicles
+  POST /api/vehicles – Add a vehicle (Admin)
+  GET /api/vehicles/{id} – Get vehicle details
+  PUT /api/vehicles/{id} – Update vehicle (Admin)
+  DELETE /api/vehicles/{id} – Delete vehicle (Admin)
 Booking
-
-POST /api/bookings – Create booking
-
-GET /api/bookings/user/{userId} – List bookings by user
-
-DELETE /api/bookings/{id} – Cancel booking
-
+  POST /api/bookings – Create booking
+  GET /api/bookings/user/{userId} – List bookings by user
+  DELETE /api/bookings/{id} – Cancel booking
 Review
-
-POST /api/reviews – Add review
-
-GET /api/reviews/vehicle/{vehicleId} – Get reviews by vehicle
+  POST /api/reviews – Add review
+  GET /api/reviews/vehicle/{vehicleId} – Get reviews by vehicle
 
 License
 This project is open-source and free to use.
 
 Author
-Pudi Sai Praveen Naidu
-Email: saipraveennaidupudi@gmail.com
-GitHub: https://github.com/saipraveennaidu
-
-yaml
-Copy code
-
----
-
-If you want, I can also **add GitHub badges** (like Java version, build status, license) to make this README **look even more professional** — ready for your resume showcase.  
-
-Do you want me to do that next?
+  Pudi Sai Praveen Naidu
+  Email: saipraveennaidupudi@gmail.com
+  GitHub: https://github.com/saipraveennaidu
