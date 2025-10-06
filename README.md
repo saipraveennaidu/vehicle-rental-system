@@ -32,7 +32,7 @@ A **Spring Boot-based backend application** for managing vehicle rentals. This s
 ---
 
 ## Project Structure
-
+```bash
 src/
 ├─ main/
 │ ├─ java/com/rental/vehicle_rental_system/
@@ -47,7 +47,7 @@ src/
 │ └─ application.properties
 └─ test/
 └─ java/com/rental/vehicle_rental_system/
-
+```
 ---
 
 ## Setup Instructions
@@ -56,19 +56,20 @@ src/
 ```bash
   git clone https://github.com/saipraveennaidu/vehicle-rental-system.git
   cd vehicle-rental-system
-
-Configure MySQL
+```
+2. **Configure MySQL**
   Create a database named vehicle_rental_db.
   Update src/main/resources/application.properties with your MySQL username and password.
 
-Build & Run
+3. Build & Run
+```bash
   mvn clean install
   mvn spring-boot:run
-
-Access API
+```
+4. Access API
   Base URL: http://localhost:8080/api/
-Use tools like Postman to test endpoints.
-
+  Use tools like Postman to test endpoints.
+```bash
 API Endpoints
 Auth
   POST /api/auth/register – Register a new user
@@ -86,11 +87,17 @@ Booking
 Review
   POST /api/reviews – Add review
   GET /api/reviews/vehicle/{vehicleId} – Get reviews by vehicle
+```
+---
+## License
 
-License
 This project is open-source and free to use.
 
-Author
-  Pudi Sai Praveen Naidu
-  Email: saipraveennaidupudi@gmail.com
-  GitHub: https://github.com/saipraveennaidu
+---
+## Author
+
+Pudi Sai Praveen Naidu
+
+Email: saipraveennaidupudi@gmail.com
+
+GitHub: https://github.com/saipraveennaidu
